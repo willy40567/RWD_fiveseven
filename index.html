@@ -18,23 +18,88 @@
           height: 500px;
           overflow:hidden;
         } */
-        #background001{
-          background-image: url("img/pexels-photo-2868665.jpeg");
-          background-repeat: no-repeat;
-          
-        }
         #myCarousel .carousel-item img{
-          
           /* padding-top: 200px; */
           min-height: 600px;
           max-height: 768px;
           margin-top: -200px;
           object-fit: cover;
         }
+
+        /* content1 */
+        .content-main {
+            width: 100%;
+            max-width: auto;
+            padding-left: 20px;padding-right: 20px;
+            margin:0 0 auto auto;
+        }
+        .content-row {
+            display: flex;
+        }
+        .content-bg {
+            width: 470px;
+            max-width: 100%;
+            padding: 60px 40px 0;
+        }
+        .content-c-heading {
+            text-align: center;
+            color: #4f2e13;
+            font-size: 44px;
+            font-size: 4.4rem;
+            letter-spacing: 0.15em;
+        }
+        .content-text {
+            margin-top: 3em;
+            font-size: 16px;
+            font-size: 1.6rem;
+            line-height: 2.5;
+            letter-spacing: 0.15em;
+        }
+        .content-btn {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .p-top-shop__img {
+            margin-right: -1000px;
+            margin-left: 100px;
+            margin-top: 250px;
+        }
+
+        
+        /* history */
+        .masthead {
+            background-size: cover;
+            min-height: 60vh;
+            position: relative;
+            color: white;
+            text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        .color-overlay {
+            position: absolute;
+            background-color: rgba(0,0,0,0.2);
+            height: 100%;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .masthead {
+                min-height: 30vh;
+            }
+            h1 {
+                font-size: calc(1.525rem + 3.3vw);
+            }
+        }
+
+
     </style>
 
   </head>
-  <body id="background001">
+  <body>
 
     <!-- navbar -->
 
@@ -86,9 +151,7 @@
     </div>
 
     
-    
-
-    <!-- carousel another -->
+    <!-- carousel -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <!-- 輪播提示 -->
       <ol class="carousel-indicators">
@@ -116,7 +179,7 @@
         <dvi class="carousel-item">
           <img src="img/carousel006.jpg" class="d-block w-100" alt="">
           <div class="carousel-caption d-none d-md-block">
-            <h5>789</h5>
+            <h5>恩娜比亞咖啡</h5>
           </div>
         </dvi>
       </div>
@@ -131,13 +194,54 @@
       </a>
     </div>
      
-
+    <!-- history with background and collapse -->
+    <div class="masthead" style="background-image: url('img/pexels-photo-2868665.jpeg');">
+      <div class="color-overlay d-flex flex-column justify-content-center align-items-center">
+          <h1>
+              都蘭歷史
+          </h1>
+          <hr>
+          <h3>
+            都蘭村是一個典型的卑南阿美群的阿美族大部落，有著知名的都蘭遺址，主要族群為原住民、閩南人、客家人。
+          </h3>
+          <h3>
+            &nbsp;&nbsp;&nbsp;&nbsp;都蘭社區隸屬於東河鄉，位於東海岸南段濱太平洋，北接泰源鄉，南臨鹿野鄉
+            與都蘭山，西以為關山鎮鄰。都蘭原名都巒。因該地多石，阿美族人闢地耕作
+            ，將挖掘的石頭砌在旱地旁，拾石砌牆處，阿美族語稱為Etolan，因發音的緣
+            故，演變為今日的都蘭。
+          </h3>
+          <p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+              了解更多
+            </button>
+          </p>
+          <div style="min-height: 120px;">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+              <div class="card card-body" style="width: 300px; font-size: 1.3rem; background-color: aqua;">
+                都蘭山目前居住為阿美族人的都蘭部落，同時許多台東的阿美族部落也視都蘭
+                山為聖山，在當地縣政府與社區居民的推動下，都蘭山也發展著文化觀光產業
+                ，希望藉由傳統文化與山海美景來吸引更多遊客。
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
     
-
+    <!-- content1 -->
     <div class="container-fluid" style="background-color: lightblue;">
-      
         <div class="col-12-md">
-          <p class="justify-content-center">test </p>
+          <div >
+            <div class="content-main">
+              <div class="content-row">
+                <div class="content-bg">
+                  <h2 class="content-c-heading">都蘭之美<span class="content-c-heading__inner"><span><br/>地區篇</span></span></h2>
+                  <p class="content-text">「如果你到都蘭這塊土地流浪，記得讓海帶走你的憂傷，讓山成為你的依靠。」<br>「都蘭」，是許多嚮往台東生活的旅人們，必定會造訪的村落，一邊望著遼闊的太平洋，轉向又是青翠的山巒相伴，在這裡，所有煩悶繫絆都將暫時拋開，我們只需單純地觀照自己身心靈的舒適感。<br></p>
+                  <p class="content-btn"><a href="http://www.zztaitung.com/107/dolanandmoon" class="c-btn">前進都蘭</a></p>
+                </div>
+                <div class="p-top-shop__img p-top-contents__img"><img src="http://www.zztaitung.com/wp-content/uploads/2015/07/%EF%BC%90%EF%BC%911.jpg" srcset="/assets/images/home/shop@2x.png 2x" alt="" width="720" height="597"></div>
+              </div>
+            </div>
+          </div>
 
       </div>
     </div>
